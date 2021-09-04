@@ -1,0 +1,10 @@
+<h1> order list</h1>
+{% for orders in order_list %} 
+<strong> Customer {{orders.order_id}} </strong>
+<ul>  
+  <li> Customer id: {{orders.customer_id}} </li>
+    <li> Product  Category: {{orders.category}} </li>
+  <li> order id: {{orders.order_id}} </li>
+  <li> Date purchased: {{orders.date_purchased}} </li>
+</ul>
+     {% endfor %}

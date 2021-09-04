@@ -1,0 +1,10 @@
+<h1> Customer list</h1>
+{% for cus in c_list %} 
+<strong> Customer <a href=specific-order>{{cus.customer_id }} </a> </strong>
+<ul>  
+  <li> Customer names: {{cus.namez}} </li>
+    <li> Product  Category: {{cus.city}} </li>
+  <li> order id: {{cus.state}} </li>
+  <li> Date purchased: {{cus.mode_of_payment}} </li>
+</ul>
+     {% endfor %}

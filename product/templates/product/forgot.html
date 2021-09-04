@@ -1,0 +1,50 @@
+ <!---{% extends 'product/base.html' %} -->
+ <!--{% block content %} -->
+<div class=forgot-image>
+ <style>
+ *{
+   margin:0;
+   padding:0;
+ }
+.btn-primary{
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 25px 50px 150px 100px;
+    padding: 10px;
+    border-style: groove;
+}
+.form-control {
+    color:green;
+    border: 3px solid;
+    margin: 20px;
+    width:200px;
+    border-style: inset;
+
+}
+.forgot-image{
+    background-image:url('https://thumbs.dreamstime.com/b/forgot-your-password-inscription-card-lock-background-computer-keyboard-forgot-your-password-208814864.jpg');
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.normal-text{
+    text-align: justify;
+    color:white;
+    text-transform: uppercase;
+
+}
+</style>
+ <div class="form-group">
+    <label for="exampleInputEmail1"  class='normal-text'>Username</label>
+    <input type="email" class="form-control" id="exampleInputEmail1"
+      placeholder="Enter email">
+    <p class='normal-text'> We will send a verification code to your email</p>
+      <button type="submit" class="btn-primary">Submit</button>
+   </div>   
+
+
+ <!---{% endblock content %} -->
